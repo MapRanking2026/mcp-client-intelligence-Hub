@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "mtosmcp": {
+      "url": "https://mtosmcp.mapranking.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ccde87ac2224a0e8e641a41a9b1aefde5b1ea83a4cba670fe2cf55e59b7cf03b"
+      }
+    }
+  }
+}

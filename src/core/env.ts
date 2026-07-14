@@ -8,7 +8,8 @@ function required(name: string): string {
 
 export const env = {
   get port() {
-    return Number(process.env.MCP_PORT ?? 3001);
+    // Render/Heroku-style platforms inject PORT; MCP_PORT is the local override.
+    return Number(process.env.PORT ?? process.env.MCP_PORT ?? 3001);
   },
   /** Static bearer secret for the MCP endpoint (per-app api_keys can layer on later). */
   get mcpSecret() {
